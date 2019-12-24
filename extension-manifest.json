@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "adoprog-Vsts-Release-AzureWebAppVFS",
   "name": "Azure WebApp Virtual File System Tasks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "adoprog",
   "targets": [
     {

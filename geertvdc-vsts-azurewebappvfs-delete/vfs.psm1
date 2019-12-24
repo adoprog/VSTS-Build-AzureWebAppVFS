@@ -90,7 +90,7 @@ function Remove-FileFromWebApp($webAppName, $slotName = "", $username, $password
 		if($_.Exception.Response.StatusCode.value__ -eq "404" -and $continueIfFileNotExist -eq $true){
 			Write-Output "File not found (but ignored because of setting)"
 		}
-		elseif($_.Exception.Response.StatusCode.value__ -eq "408") {
+		elseif($_.Exception.Response.StatusCode.value__ -eq "409") {
 			Write-Output "File is busy (ignored)"
 		}
 		else {
